@@ -4,17 +4,17 @@ import java.util.ArrayList;
 
 public class Caretaker{
 
-  private ArrayList<Momento> events = new ArrayList<>();
+  private ArrayList<Message> events = new ArrayList<>();
 
   Caretaker(){
 
   }
 
-  void add(Momento m){
-    events.add(m);
+  void add(Message msg){
+    events.add(msg);
   }
 
-  Momento get(int i){
+  Message get(int i){
     return events.get(i);
   }
 }
