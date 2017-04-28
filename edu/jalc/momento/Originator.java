@@ -1,5 +1,7 @@
 package edu.jalc.momento;
 
+import java.util.ArrayList;
+
 public class Originator{
 
   Caretaker caretaker = new Caretaker();
@@ -29,5 +31,9 @@ public class Originator{
 
   public Message getStateFromCaretaker(int i){
     return caretaker.get(i);
+  }
+
+  public ArrayList<Message> getWarnings(){
+    return caretaker.getAll(State.WARN);
   }
 }

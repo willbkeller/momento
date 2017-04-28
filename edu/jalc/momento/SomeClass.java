@@ -21,5 +21,7 @@ public class SomeClass{
     o.setState(State.WARN, "warning");
     o.save();
     System.out.println(o.getStateFromCaretaker(5));
+
+    System.out.println(o.getWarnings());
   }
 }
