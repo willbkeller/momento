@@ -9,5 +9,17 @@ public class SomeClass{
     o.setState(State.TRACE, "trace");
     o.save();
     System.out.println(o.getStateFromCaretaker(1));
+    o.setState(State.ERROR, "error");
+    o.save();
+    System.out.println(o.getStateFromCaretaker(2));
+    o.setState(State.FATAL, "fatal");
+    o.save();
+    System.out.println(o.getStateFromCaretaker(3));
+    o.setState(State.INFO, "info");
+    o.save();
+    System.out.println(o.getStateFromCaretaker(4));
+    o.setState(State.WARN, "warning");
+    o.save();
+    System.out.println(o.getStateFromCaretaker(5));
   }
 }
